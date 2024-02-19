@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a5ae018ce54b939d08271dd84eb88726"
+name = "shop-node-prac"
+application_url = "https://tournaments-could-shell-requesting.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "order-funnel.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://tournaments-could-shell-requesting.trycloudflare.com/auth/callback",
+  "https://tournaments-could-shell-requesting.trycloudflare.com/auth/shopify/callback",
+  "https://tournaments-could-shell-requesting.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
